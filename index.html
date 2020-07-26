@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Survey Form</title>
+</head>
+<body>
+	<main>
+		<div class="main-container">
+		<header>
+			<h1 id="title">Coding Survey</h1>
+			<p id="description">Thank you for taking the time to help us get more information about coding</p>
+		</header>	
+		<div class="container">
+			<form id="survey-form">
+				<div class="fgroup">
+					<label for="name" id="name-label">Name</label>
+					<input type="text" name="name" id="name" placeholder="Enter your name" required="" class="bar">
+				</div>
+				<div class="fgroup">
+					<label for="email" id="email-label">Email</label>
+					<input type="email" name="email" id="email" placeholder="Enter your email" required="" class="bar">
+				</div>	
+				<div class="fgroup">	
+					<label for="number" id="number-label" >Age</label>
+					<input type="number" name="age" id="number" placeholder="Enter your age" min="1" max="99" required="" class="bar">
+				</div>	
+				<div class="fgroup">
+					<p>Which option best describes your current role?</p>
+					<select id="dropdown" name="dropdown">
+						<option disabled="" selected="" value="">Select current role</option>
+						<option value="student">Student</option>
+						<option value="job">Full time job</option>
+						<option value="learner">Full time learner</option>
+						<option value="prefNo">Prefer not to say</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				<div class="fgroup">	
+					<p>Would you recommernd starting to code to a friend?</p>
+					<label for="rad1">
+						<input type="radio" name="radb" id="rad1">Definitely
+					</label>
+					<label for="rad2">
+						<input type="radio" name="radb" id="rad2">Maybe
+					</label>
+					<label for="rad3">
+						<input type="radio" name="radb" id="rad3">Not sure
+					</label>
+				</div>
+				<div class="fgroup">
+					<p>What is your main interest? <span class="clue">(check all that apply)</span></p>
+					<label for="bt1">
+						<input type="checkbox" name="cbox" value="front-end-projects" id="bt1">Front-end projects
+					</label>
+					<label for="bt2">
+						<input type="checkbox" name="cbox" value="back-end-projects" id="bt2">Back-end projects
+					</label>
+							<label for="bt3">
+						<input type="checkbox" name="cbox" value="data-visualization" id="bt3">Data Science
+					</label>
+							<label for="bt4">
+						<input type="checkbox" name="cbox" value="challenges" id="bt4">Full-stack development
+					</label>
+							<label for="bt5">
+						<input type="checkbox" name="cbox" value="open-source-community" id="bt5">Software development
+					</label>
+							<label for="bt6">
+						<input type="checkbox" name="cbox" value="gitter-help-rooms" id="bt6">Web design
+					</label>
+							<label for="bt7">
+						<input type="checkbox" name="cbox" value="videos" id="bt7">UX design
+					</label>
+				</div>
+				<div class="fgroup">
+					<p>Any comments or suggestions?</p>
+					<textarea rows="5" cols="40" placeholder="Enter your comment here..."></textarea>
+				</div>
+				<div class="fgroup">
+					<input type="submit" name="submit" id="submit">
+				</div>
+			</form>
+		</div>
+	</div>
+	</main>
+</body>
+</html>
